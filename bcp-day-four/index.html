@@ -12,38 +12,13 @@
     <form onsubmit="return handleSubmit(event), false;">
         <p>
             <label>
-                Name:
-                <input name="name" type="text" value="name">
+                How many animals do I have?
+                <input name="guess" type="number">
             </label>
             
         </p>
         
-        <p>
-            <label>Comments:
-            <textarea></textarea>
-            </label>
-        </p>
-        
-        <p>
-            <label> 
-                <input checked value="pepperoni" name = "toppings"type="checkbox">Pepperoni
-            </label>
-            <label>
-                <input checked value="sausage" name = "toppings"type="checkbox">Sausage
-            </label>
-            <label>
-                <input checked value="spinach"name = "toppings"type="checkbox">Spinach
-            </label>   
-            
-            
-        </p>
-        <label>
-                <p>
-                <input name="grade"type="radio">A
-                <input name="grade"type="radio">B
-                <input name="grade"type="radio">C
-            </p>
-        </label>
+        <p id="result">Make a guess!</p>
             
         <button>Submit</button>
             
