@@ -9,22 +9,31 @@
 </head>
 <body>
     <h1>APPS FTW!</h1>
-    <form onsubmit="return handleSubmit(event), false;">
+    <form onsubmit="event.preventDefault(); false;">
         <p>
             <label>
-                How many animals do I have?
-                <input name="guess" type="number">
+                <input value="olives" name="toppings" type"checkbox"> Olives
             </label>
-            
+            <label>
+                    <input value="pepperoni" name="toppings" type"checkbox"> Pepperoni
+            </label>
+            <label>
+                    <input value="sausage" name="toppings" type"checkbox"> Sausage
+            </label>
+        </p>
+
+        <p>
+            <label><input value="A" name = "grade" type="radio">A</label>
+            <label><input value="B" name = "grade" type="radio">B</label>
+            <label><input value="C" name = "grade" type="radio">C</label>
         </p>
         
-        <p id="result">Make a guess!</p>
             
-        <button>Submit</button>
+        <button>Order</button>
             
     </form>
     
     <script src="index.js"></script>
-    
+
 </body>
 </html>
